@@ -135,25 +135,7 @@ class addProfileViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func allergyOnClick(_ sender: Any) { self.navigationController?.pushViewController(allergiesVC!, animated:true)
     }
-    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        globalName = UserDefaults.standard.string(forKey: "tempName") as! String
-//        globalName.append(contentsOf: userNameInput.text!)
-//        print(globalName)
-//    }
 
-  /*  @IBAction func textChanged(_ sender: Any) {
-        globalName = userNameInput.text!
-        globalName = UserDefaults.standard.string(forKey: "tempName") as! String
-        globalName.append(contentsOf: userNameInput.text!)
-        print(globalName)
-    }*/
-    
-//    @IBAction func textChanged(_ sender: Any) {
-//        globalName = userNameInput.text!
-//        print(globalName)
-//    }
-//
 
     func alertExistingUserName() {
         let alert = UIAlertController(title: "Alert", message: "You already have the username", preferredStyle: UIAlertController.Style.alert)
@@ -217,16 +199,5 @@ class addProfileViewController: UIViewController, UIPickerViewDelegate, UIPicker
         theDiet = dietData[row] // add picker data to local variable theDiet(String)
         print(dietData[row])
     }
-
-   
-        // adding profiles each time we click add button --> No... call new controller
-        // this is for in the detailed view controller
-    
-//    @IBAction func allergiesAction(_ sender: Any) {
-//        let tableVC = storyboard?.instantiateViewController(withIdentifier: "AllergiesViewController") as! AllergiesViewController
-//        tableVC.view.backgroundColor = UIColor.white
-//        
-//    }
-    
-    
+  
 }
